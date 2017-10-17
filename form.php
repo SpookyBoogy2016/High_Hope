@@ -1,5 +1,5 @@
 <?php
-echo "do some shit";
+echo "do some sheeet";
 echo "Damn Daniel";
 echo ...
 
