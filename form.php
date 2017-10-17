@@ -1,3 +1,4 @@
 <?php
-echo "Damn Daniel"
+echo "do some shit";
+echo "Damn Daniel";
 ?>
