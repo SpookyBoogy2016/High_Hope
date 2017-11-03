@@ -18,11 +18,29 @@
 
   </head>
 
+  <style>
+  a.navbar-brand{
+    font-family: serif;
+    font-size: 2em;
+    color: #0D4068 !important;
+  }
+
+.nav-link {
+  font-family: serif;
+  font-size: 1.5em;
+  color: #0D4068 !important;
+}
+
+.carousel-caption *{
+  color: black;
+}
+  </style>
+
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html" style="font-family: serif; font-size: 2em;"><img src = "logo.png"> High Hopes</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="imgs/logo.png"> High Hopes </a>
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -82,28 +100,20 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('imgs/img1.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('imgs/img2.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
             </div>
           </div>
         </div>
