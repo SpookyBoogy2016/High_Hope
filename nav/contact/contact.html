@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Schedule a new Patient</title>
+    <title>Contact Us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +33,10 @@ a.navbar-brand{
 
 .nav-link{
   font-size: 1.25em;
+}
+
+small{
+  color: #0D4068;
 }
   </style>
 
@@ -127,69 +131,81 @@ a.navbar-brand{
       </div>
     </nav>
 
-    <br>
-    <br>
+    <br><br><br><br><br>
     <!-- Page Content -->
     <div class="container">
-      <br><br>
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">
-        <small>Subheading</small>
-      </h1>
-
-      <!-- Portfolio Item Row -->
       <div class="row">
-
-        <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        <!-- Page Heading -->
+        <h1 class="mt-4 mb-3">
+          <small>Questions or Concerns?</small>
+        </h1>
+      </div>
+      <!-- Form Item Row -->
+      <div class="row">
+        <div class="col-md-6">
+          <form method="post" action="sendmail.php">
+            <div class="form-group row">
+             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+             <div class="col-md-10">
+               <input type="email" class="form-control" id="inputEmail">
+             </div>
+           </div>
+           <div class="form-group row">
+            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-md-10">
+              <input type="email" class="form-control" id="inputName">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
+            <div class="col-md-10">
+              <input type="email" class="form-control" id="inputSubject">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-md-10">
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          </form>
         </div>
 
-        <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
+        <!--map-->
+        <div class="col-md-6">
+          <iframe width="100%" height="100%" src="//www.google.com/maps/embed/v1/place?q=High,Hopes
+            &zoom=14
+            &key=AIzaSyAPMcbYbkT_a_Ud3mhEsewzOS1usWSAbbU">
+          </iframe>
         </div>
-
       </div>
       <!-- /.row -->
 
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
-
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
+      <br>
+      <div class="row justify-content-md-end">
+        <div class="col col-md-6">
+          <h5>High Hopes Preschool & Pediatric Therapy Clinic</h5>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
       </div>
-      <!-- /.row -->
+      <div class="row justify-content-md-end">
+        <div class="col col-md-3">
+          <p> 301 High Hopes Court <br> Franklin, TN  37064
+            <br> 615-661-5437 Phone
+            <br> 615-309-8342 Main Fax
+            <br> 615-277-2838 Clinic Fax</p>
+        </div>
+        <div class="col col-md-3">
+          <h6>Preschool Hours of Operation:</h6>
+          <p>7:00 AM - 6:00 PM</p>
+          <h6>Pediatric Therapy Clinic Hours of Operation:</h6>
+          <p>8:00am - 6:00pm<br><i>therapy by appointment</i></p>
+        </div>
+      </div>
 
     </div>
     <!-- /.container -->
