@@ -159,27 +159,27 @@ h2{
         <div class="col-md-6">
           <form method="post" action="sendmail.php">
             <div class="form-group row">
-             <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+             <label for="inputEmail" class="col-sm-2 col-form-label">Email *</label>
              <div class="col-md-10">
-               <input type="email" class="form-control" id="inputEmail">
+               <input type="email" class="form-control" id="inputEmail" required="required">
              </div>
            </div>
            <div class="form-group row">
             <label for="inputName" class="col-sm-2 col-form-label">Name</label>
             <div class="col-md-10">
-              <input type="email" class="form-control" id="inputName">
+              <input type="text" class="form-control" id="inputName">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
+            <label for="inputSubject" class="col-sm-2 col-form-label">Subject *</label>
             <div class="col-md-10">
-              <input type="email" class="form-control" id="inputSubject">
+              <input type="text" class="form-control" id="inputSubject" required="required">
             </div>
           </div>
           <div class="form-group row">
-            <label for="message" class="col-sm-2 col-form-label">Message</label>
+            <label for="message" class="col-sm-2 col-form-label">Message&nbsp*</label>
             <div class="col-md-10">
-              <textarea class="form-control" id="message" rows="3"></textarea>
+              <textarea class="form-control" id="message" rows="3" required="required"></textarea>
             </div>
           </div>
           <div class="form-group row">
