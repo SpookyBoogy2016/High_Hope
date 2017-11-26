@@ -15,7 +15,6 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/modern-business.css" rel="stylesheet">
-
   </head>
 
   <style>
@@ -93,7 +92,7 @@ td{
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="events.html">News and Events</a>
+              <a class="nav-link" href="events.php">News and Events</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -165,7 +164,7 @@ td{
 
                 if($curr != intval($month)){ //if the last known month is not in the same month as the next even then make a new row
                   if($curr != 0){
-                    echo "</table>";
+                    echo "</table><br>";
                     echo "</div>"; //if not on the first time, close last div
                   }
                   echo '<div class="listing">';
@@ -176,7 +175,7 @@ td{
                 echo "<tr><td width='40%'><a href=".$row[2].">".$row[0]."</a></td><td width='50%'>(".$month."/".$day."/".$year.") $row[3]</td><tr>";
               }
             }
-            echo '</table>'; //close last table
+            echo '</table><br>'; //close last table
             echo '</div>';  //close last one
           ?>
           <br>
