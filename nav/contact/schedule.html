@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Schedule a new Patient</title>
+  <title>Schedule a new Patient</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../../css/modern-business.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../../css/modern-business.css" rel="stylesheet">
 
-  </head>
+<script type="text/javascript">
+function toggleDisable(){
+  document.getElementById('otherText').disabled = !document.getElementById('otherText').disabled;
 
-  <style>
+  if(document.getElementById('otherText').disabled){
+    document.getElementById('otherText').value = "";
+  }
+}
+</script>
+
+</head>
+
+<style>
 a.navbar-brand{
   font-family: serif;
   font-size: 2em;
@@ -34,7 +44,11 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
-  </style>
+
+h1{
+  color: #0D4068 !important;
+}
+</style>
 
   <body>
 
@@ -82,7 +96,7 @@ a.navbar-brand{
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../events.html">News and Events</a>
+              <a class="nav-link" href="../events.php">News and Events</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -133,63 +147,118 @@ a.navbar-brand{
       <br><br>
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3">
-        <small>Subheading</small>
+        Scheduling for new Therapy Patients
       </h1>
+      <p>If you would like to request a therapy evaluation or session, please fill out the form below and we will be in contact with you soon</p>
+      <br>
 
-      <!-- Portfolio Item Row -->
-      <div class="row">
-
-        <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputFName">First Name</label>
+            <input type="text" class="form-control" id="inputFName" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputLName">Last Name</label>
+            <input type="text" class="form-control" id="inputLName" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPName">Child's Name</label>
+          <input type="text" class="form-control" id="inputPName" placeholder="Patient Full Name">
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="...@....com">
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <div class="row">
+              &nbsp &nbsp Phone Number:
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                <input type="text" class="form-control" id="Phone0" maxlength="3" placeholder="###">
+              </div>
+              -
+              <div class="col-sm-1">
+                <input type="text" class="form-control" id="Phone1" maxlength="3" placeholder="###">
+              </div>
+              -
+              <div class="col-sm-1">
+                <input type="text" class="form-control" id="Phone2" maxlength="4" placeholder="####">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--WHICH THERAPY IS NEEDED-->
+        <div class="form-group">
+          <h5>I am interested in the following therapy services for my child:</h5>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="PTherapy" id="inlineRadio1" value="True"> Physical Therapy
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="OTherapy" id="inlineRadio2" value="True"> Occupational Therapy
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="STherapy" id="inlineRadio3" value="True"> Speech Therapy
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="FTherapy" id="inlineRadio3" value="True"> Feeding Therapy
+            </label>
+          </div>
         </div>
 
-        <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
+        <!--HOW DID YOU HEAR ABOUT US-->
+        <div class="form-group">
+          <h5>How did you hear about High Hopes?</h5>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="PTherapy" id="inlineRadio1" value="True"> Internet Search
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="OTherapy" id="inlineRadio2" value="True"> Pediatrician
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="STherapy" id="inlineRadio3" value="True"> TEIS
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="FTherapy" id="inlineRadio3" value="True"> Word of Mouth
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="FTherapy" id="inlineRadio3" value="True"> Social Media
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="FTherapy" id="inlineRadio3" value="True" onclick="toggleDisable()"> Other
+            </label>
+          </div>
+          <div class="row">
+            <div class="col">
+              <textarea class="form-control" name="otherText" id="otherText" rows="3" disabled="true"></textarea>
+            </div>
+          </div>
         </div>
-
-      </div>
-      <!-- /.row -->
-
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
-
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
     </div>
     <!-- /.container -->
 
