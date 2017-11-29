@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/modern-business.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function toggleDisplay(x){
+        //turn off display of everything?
+        document.getElementById('preschoolLinks').style.display = "none";
+        document.getElementById('therapyLinks').style.display = "none";
+        document.getElementById('generalLinks').style.display = "none";
+        //turn on display
+        document.getElementById(x).style.display = "inline";
+      }
+    </script>
+
+  </head>
+
+  <style>
+a.navbar-brand{
+  font-family: serif;
+  font-size: 2em;
+  color: #0D4068 !important;
+}
+
+.nav-link {
+  font-family: serif;
+  font-size: 1.5em;
+  color: #0D4068 !important;
+}
+
+.carousel-caption *{
+  color: black;
+}
+
+.nav-link{
+  font-size: 1.3em;
+}
+.group{
+  border-bottom: 2px solid #0D4068;
+  color: #0D4068;
+}
+.resource{
+  display: none;
+  /*display: inline;*/
+}
+.noDecoration a:hover{
+  text-decoration: none;
+}
+  </style>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="../../index.html"><img src="../../imgs/logo.png"> High Hopes </a>
+      <div class="container" style="margin-right: 20px;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
+                <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
+                <a class="dropdown-item" href="../about/report.html">Annual Report</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Preschool
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../preschool/classrooms.html">Classrooms</a>
+                <a class="dropdown-item" href="../preschool/team.html">Meet the Team</a>
+                <a class="dropdown-item" href="../preschool/parents.html">Preschool Parents</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pediatric Therapy
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../therapy/services.html">Therapy Services</a>
+                <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
+                <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
+                <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
+                <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
+                <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../events.php">News and Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ways to Give
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../give/apparel.html">High Hopes Apparel</a>
+                <a class="dropdown-item" href="../give/donate.html">Donate</a>
+                <a class="dropdown-item" href="../give/involve.html">Get Involved</a>
+                <a class="dropdown-item" href="../give/wish.html">Wish List</a>
+                <a class="dropdown-item" href="../give/campaign.html">Capital Campaign Share</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Connecting the Dots
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../connect/resources.html">Resources</a>
+                <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
+                <a class="dropdown-item" href="../connect/family.html">Family Support</a>
+                <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
+                <a class="dropdown-item" href="../connect/recreational.html">Recreational & Therapeutic</a>
+                <a class="dropdown-item" href="../connect/transitional.html">Transitional Planning</a>
+                <a class="dropdown-item" href="../connect/tips.html">Tips by & For Parents</a>
+                <a class="dropdown-item" href="../connect/spotlight.html">Local Spotlight</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+                <a class="dropdown-item" href="../contact/schedule.html">Schedule New Patient</a>
+                <a class="dropdown-item" href="../contact/volunteer.html">Volunteers</a>
+                <a class="dropdown-item" href="../contact/employment.html">Employment</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="top">
+    </div>
+    <br>
+    <br>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Resources</h1>
+      <br>
+      <h4>We have compiled a list of resources that we hope you will find comprehensive and helpful!</h4>
+      <br>
+
+      <!--PRESCHOOL LINKS-->
+      <a href="#top" onclick="toggleDisplay('preschoolLinks')" class="noDecoration"><h3 class="group">Preschool Links</h3></a>
+      <div class="container resource" id ="preschoolLinks">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/foodallergy.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.foodallergy.org/">FARE</a>
+                </h4>
+                <p class="card-text">FARE’s mission is to improve the quality of life and the health of individuals with food allergies, and to provide them hope through the promise of new treatments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/kidstogether.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.kidstogether.org/">Kids Together, Inc.</a>
+                </h4>
+                <p class="card-text">The Goals of Kids Together, Inc. include a desire to remove barriers that exclude people with disabilities. We support the belief that children with disabilities, like all children, have the need to be welcomed, cherished and embraced in our communities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/tnstar.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.tnstarquality.org/default.htm">Tennessee Star - Quality Program</a>
+                </h4>
+                <p class="card-text">This site is for child care providers who are searching for information about Tennessee's Evaluation and Report Card and Star-Quality programs. It also offers details about how these programs affect providers and the children they care for.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/books.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.governorsfoundation.org/">Books from Birth</a>
+                </h4>
+                <p class="card-text">GBBF is here to support your efforts in enrolling children and increasing awareness and support for your Imagination Library program. Here you will find resources and information to assist you in your efforts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/preschool.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <br>
+                  <br>
+                  <br>
+                  <a href="http://www.everythingpreschool.com/">Everything Preschool</a>
+                </h4>
+                <p class="card-text">At Everything Preschool our philosophy revolves around the concept that Children learn through Doing. Our site contains Over 30,000 Preschool Education Activities Seperated into over 100 Themes, 26 Alphabet Areas, & Lesson Plans. Whether you are a parent or teacher we encourage you to adapt these activites to your specific challenges and challenge you to never Stop Learning. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--THERAPY LINKS-->
+      <a href="#top" onclick="toggleDisplay('therapyLinks')" class="noDecoration"><h3 class="group">Therapy Links</h3></a>
+      <div class="container resource" id="therapyLinks">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/foodallergy.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.foodallergy.org/">FARE</a>
+                </h4>
+                <p class="card-text">FARE’s mission is to improve the quality of life and the health of individuals with food allergies, and to provide them hope through the promise of new treatments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/kidstogether.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.kidstogether.org/">Kids Together, Inc.</a>
+                </h4>
+                <p class="card-text">The Goals of Kids Together, Inc. include a desire to remove barriers that exclude people with disabilities. We support the belief that children with disabilities, like all children, have the need to be welcomed, cherished and embraced in our communities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/tnstar.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.tnstarquality.org/default.htm">Tennessee Star - Quality Program</a>
+                </h4>
+                <p class="card-text">This site is for child care providers who are searching for information about Tennessee's Evaluation and Report Card and Star-Quality programs. It also offers details about how these programs affect providers and the children they care for.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/books.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.governorsfoundation.org/">Books from Birth</a>
+                </h4>
+                <p class="card-text">GBBF is here to support your efforts in enrolling children and increasing awareness and support for your Imagination Library program. Here you will find resources and information to assist you in your efforts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/preschool.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <br>
+                  <br>
+                  <br>
+                  <a href="http://www.everythingpreschool.com/">Everything Preschool</a>
+                </h4>
+                <p class="card-text">At Everything Preschool our philosophy revolves around the concept that Children learn through Doing. Our site contains Over 30,000 Preschool Education Activities Seperated into over 100 Themes, 26 Alphabet Areas, & Lesson Plans. Whether you are a parent or teacher we encourage you to adapt these activites to your specific challenges and challenge you to never Stop Learning. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#top" onclick="toggleDisplay('generalLinks')" class="noDecoration"><h3 class="group">General Links</h3></a>
+      <div class="container resource" id ="generalLinks">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/foodallergy.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.foodallergy.org/">FARE</a>
+                </h4>
+                <p class="card-text">FARE’s mission is to improve the quality of life and the health of individuals with food allergies, and to provide them hope through the promise of new treatments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/kidstogether.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.kidstogether.org/">Kids Together, Inc.</a>
+                </h4>
+                <p class="card-text">The Goals of Kids Together, Inc. include a desire to remove barriers that exclude people with disabilities. We support the belief that children with disabilities, like all children, have the need to be welcomed, cherished and embraced in our communities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/tnstar.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="http://www.tnstarquality.org/default.htm">Tennessee Star - Quality Program</a>
+                </h4>
+                <p class="card-text">This site is for child care providers who are searching for information about Tennessee's Evaluation and Report Card and Star-Quality programs. It also offers details about how these programs affect providers and the children they care for.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/books.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="https://www.governorsfoundation.org/">Books from Birth</a>
+                </h4>
+                <p class="card-text">GBBF is here to support your efforts in enrolling children and increasing awareness and support for your Imagination Library program. Here you will find resources and information to assist you in your efforts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" img src="capture/preschool.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <br>
+                  <br>
+                  <br>
+                  <a href="http://www.everythingpreschool.com/">Everything Preschool</a>
+                </h4>
+                <p class="card-text">At Everything Preschool our philosophy revolves around the concept that Children learn through Doing. Our site contains Over 30,000 Preschool Education Activities Seperated into over 100 Themes, 26 Alphabet Areas, & Lesson Plans. Whether you are a parent or teacher we encourage you to adapt these activites to your specific challenges and challenge you to never Stop Learning. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
