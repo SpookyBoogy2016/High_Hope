@@ -8,13 +8,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>High Hopes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../../css/modern-business.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function toggleDisplay(x){
+        //turn off display of everything?
+        document.getElementById('preschoolLinks').style.display = "none";
+        document.getElementById('therapyLinks').style.display = "none";
+        document.getElementById('generalLinks').style.display = "none";
+        //turn on display
+        document.getElementById(x).style.display = "inline";
+      }
+    </script>
 
   </head>
 
@@ -38,8 +49,16 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
-p {
-  font-size: 1.15em;
+.group{
+  border-bottom: 2px solid #0D4068;
+  color: #0D4068;
+}
+.resource{
+  display: none;
+  /*display: inline;*/
+}
+.noDecoration a:hover{
+  text-decoration: none;
 }
   </style>
 
@@ -59,7 +78,6 @@ p {
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../about/resources.html">Resources</a>
                 <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="../about/report.html">Annual Report</a>
@@ -79,6 +97,8 @@ p {
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pediatric Therapy
               </a>
+
+              <!-- CHANGE NAVBAR ERREYWHERE ELSE! -->
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                   <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
                   <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
@@ -111,6 +131,7 @@ p {
                 Connecting the Dots
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../connect/resources.html">Resources</a>
                 <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
                 <a class="dropdown-item" href="../connect/family.html">Family Support</a>
                 <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
@@ -136,28 +157,77 @@ p {
       </div>
     </nav>
 
-        <br>
-        <br>
-        <!-- Page Content -->
-        <div class="container">
-          <br><br>
-          <!-- Page Heading/Breadcrumbs -->
-          <h1 class="mt-4 mb-3">
-            Employment Opportunities
-          </h1>
-          <h4>Working at High Hopes can be rewarded in many different ways.</h4><br>
+  </div>
 
-          <div class="row">
-            <div class="col-md-12">
-               <img src="http://www.njfamily.com/NJ-Family/April-2012/The-Lessons-of-Preschool/Preschool.jpg" width="200px" style="float: left; margin-right: 40px; margin-bottom: 40px;"/>
-               <p>Although the children here are the ones being served, oftentimes we are the ones that truly feel blessed at the end of the day!  Job opportunities at High Hopes range from positions as classroom teachers to pediatric therapists.  With such a diverse, talented staff, we believe that teamwork and collaboration are a large part of the success seen here and know that each individual is an integral part of High Hopes.</p>
-               <p>If you are interested in being a part of the High Hopes Preschool team, please send your resume to Melanie Anderson at <a href="mailto:manderson@highhopesforkids.org">manderson@highhopesforkids.org</a>, Director of Educational Services.</p>
-               <p>If you are interested in being a part of the High Hopes Therapy Clinic team, please send your resume to Kristin Garner at <a href="mailto:kgarner@highhopesforkids.org">kgarner@highhopesforkids.org</a>, Director of Clinical Services.</p>
+<br>
+
+    <!-- Page Content -->
+    <div class="container">
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/speech1.png" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h1 class="card-title text-shadow text-white text-uppercase mb-0">Speech-Language Pathology</h1>
+                  <h4 class="text-shadow text-white">Our Speech-Language Pathologists understand that the ability to communicate is our most human characteristic and is essential to learning, play, and social interaction.  Impaired communication can affect every aspect of a child's life.</h4>
+                  <br>
+                  <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Based on your child's individual needs, expert therapy techniques can be utilized to help expand his or her comprehension and/or production of language experienced daily.</p>
+
+                  <a href="#" class="btn btn-secondary">Schedule Patient</a>
+                 
+                </div>
+              </div>
             </div>
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/speech2.jpg" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h2 class="card-title text-shadow text-white text-uppercase mb-0">Specialization</h2>
+                  <br>
+                  <h4 class="text-shadow text-white">Treatment is offered in the following areas:</h4>
+                  <br>
+                  <ul class="lead card-text text-shadow text-white w-50 d-none d-lg-block">
+                    <li>Sound production (articulation)</li>
+                    <li>Receptive language skills (understanding and following directions)</li>
+                    <li>Expressive language skills (putting words together, naming objects, talking about events)</li>
+                    <li>Pragmatics (eye contact, rules of conversation)</li>
+                    <li>Fluency (speed of speech and stuttering)</li>
+                    <li>Augmentative and assistive communication (sign language, communication boards, electronic systems, speech generating devices)</li>
+                    <li>Oral-motor and feeding skills (how the parts of the mouth move for speaking and eating)</li>
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/speech3.jpg" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h2 class="card-title text-shadow text-white text-uppercase mb-0">Who Benefits from Speech Therapy?</h2>
+                  <br>
+                  <h4 class="text-shadow text-white">Children who have:</h4>
+                  <br>
+                  <ul class="lead card-text text-shadow text-white w-50 d-none d-lg-block">
+                    <li>Apraxia</li>
+                    <li>Articulation Disorder</li>
+                    <li>Developmental Language Delays</li>
+                    <li>Social/Pragmatic Language Disorders</li>
+                    <li>Autism Spectrum Disorders</li>
+                    <li>Cognitive Delays</li>
+                    <li>Oral-Motor Deficits</li>
+                    <li>Dysphagia/oral feeding disorders including difficulties with eating and swallowing</li>
+                    <li>Dysarthria</li>
+                  </ul>
+            
+                </div>
+              </div>
+            </div>
+      
+  
           </div>
-
-        </div>
-    <!-- /.container -->
+          <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">

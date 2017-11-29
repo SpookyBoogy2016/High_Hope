@@ -8,13 +8,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>High Hopes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../../css/modern-business.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function toggleDisplay(x){
+        //turn off display of everything?
+        document.getElementById('preschoolLinks').style.display = "none";
+        document.getElementById('therapyLinks').style.display = "none";
+        document.getElementById('generalLinks').style.display = "none";
+        //turn on display
+        document.getElementById(x).style.display = "inline";
+      }
+    </script>
 
   </head>
 
@@ -38,8 +49,16 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
-p {
-  font-size: 1.15em;
+.group{
+  border-bottom: 2px solid #0D4068;
+  color: #0D4068;
+}
+.resource{
+  display: none;
+  /*display: inline;*/
+}
+.noDecoration a:hover{
+  text-decoration: none;
 }
   </style>
 
@@ -59,7 +78,6 @@ p {
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../about/resources.html">Resources</a>
                 <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="../about/report.html">Annual Report</a>
@@ -79,16 +97,18 @@ p {
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pediatric Therapy
               </a>
+
+              <!-- CHANGE NAVBAR ERREYWHERE ELSE! -->
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                  <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
-                  <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
-                  <a class="dropdown-item" href="../therapy/speechpathology.html">Speech Pathology</a>
-                  <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
-                  <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
-                  <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
-                  <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
-                  <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
-                  <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+                <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
+                <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
+                <a class="dropdown-item" href="../therapy/speechpathology.html">Speech Pathology</a>
+                <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
+                <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
+                <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
+                <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
+                <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
+                <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
               </div>
             </li>
             <li class="nav-item">
@@ -111,6 +131,7 @@ p {
                 Connecting the Dots
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../connect/resources.html">Resources</a>
                 <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
                 <a class="dropdown-item" href="../connect/family.html">Family Support</a>
                 <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
@@ -136,28 +157,83 @@ p {
       </div>
     </nav>
 
-        <br>
-        <br>
-        <!-- Page Content -->
-        <div class="container">
-          <br><br>
-          <!-- Page Heading/Breadcrumbs -->
-          <h1 class="mt-4 mb-3">
-            Employment Opportunities
-          </h1>
-          <h4>Working at High Hopes can be rewarded in many different ways.</h4><br>
+  </div>
 
-          <div class="row">
-            <div class="col-md-12">
-               <img src="http://www.njfamily.com/NJ-Family/April-2012/The-Lessons-of-Preschool/Preschool.jpg" width="200px" style="float: left; margin-right: 40px; margin-bottom: 40px;"/>
-               <p>Although the children here are the ones being served, oftentimes we are the ones that truly feel blessed at the end of the day!  Job opportunities at High Hopes range from positions as classroom teachers to pediatric therapists.  With such a diverse, talented staff, we believe that teamwork and collaboration are a large part of the success seen here and know that each individual is an integral part of High Hopes.</p>
-               <p>If you are interested in being a part of the High Hopes Preschool team, please send your resume to Melanie Anderson at <a href="mailto:manderson@highhopesforkids.org">manderson@highhopesforkids.org</a>, Director of Educational Services.</p>
-               <p>If you are interested in being a part of the High Hopes Therapy Clinic team, please send your resume to Kristin Garner at <a href="mailto:kgarner@highhopesforkids.org">kgarner@highhopesforkids.org</a>, Director of Clinical Services.</p>
+<br>
+
+    <!-- Page Content -->
+    <div class="container">
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/feed1.jpg" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h1 class="card-title text-shadow text-white text-uppercase mb-0">Feeding Therapy</h1>
+                  <h4 class="text-shadow text-white">At High Hopes, we offer oral-motor, sensory, and behavioral-based evaluations and therapy for children whose congenital/acquired medical issues, or behaviorally based impairments affect feeding.</h4>
+                  <br>
+                  <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Our therapists can work with both you and your child, using specialized techniques, to improve feeding abilities.</p>
+                    <br>
+                  <a href="#" class="btn btn-secondary">Schedule Patient</a>
+                 
+                </div>
+              </div>
             </div>
-          </div>
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/feed2.jpg" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h2 class="card-title text-shadow text-white text-uppercase mb-0">Common Causes</h2>
+                  <br>
+                  <h4 class="text-shadow text-white">Feeding/Swallowing Difficulties Often Includes:</h4>
+                  <br>
+                  <ul class="lead card-text text-shadow text-white w-50 d-none d-lg-block">
+                    <li>Complex medical conditions related to heart, lung, and gastroesophageal diseases</li>
+                    <li>Oral sensory and motor issues</li>
+                    <li>Structural abnormalities, such as cleft lip or palate</li>
+                    <li>Neuromuscular disorders</li>
+                    <li>Prematurity</li>
+                    <li>Developmental disabilities</li>
+                    <li>Social emotional and environmental factors</li>
+                  </ul>
+                  <h4 class="text-shadow text-white">Goals of Therapy:</h4>
+                  <ul class="lead card-text text-shadow text-white w-50 d-none d-lg-block">
+                        <li>Complex medical conditions related to heart, lung, and gastroesophageal diseasesEnhancing the strength and coordination of the lips, tongue, and jaw</li>
+                        <li>Eliminating certain food and drink aversions</li>
+                        <li>Lessening resistance to feeding</li>
+                      </ul>
+                 
+                </div>
+              </div>
+            </div>
+      
+            <div class="bg-faded p-4 my-4">
+              <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" src="img/feed3.jpg" alt="">
+                <div class="card-img-overlay bg-overlay">
+                  <h2 class="card-title text-shadow text-white text-uppercase mb-0">Our Clinicians</h2>
+                  <br>
+                  <h4 class="text-shadow text-white">Clinicians at High Hopes are trained in:</h4>
+                  <br>
+                  <ul class="lead card-text text-shadow text-white w-50 d-none d-lg-block">
+                    <li>Sequential Oral Sensory (SOS) Approach to Feeding</li>
+                    <li>Food Chaining</li>
+                    <li>Beckman Oral Motor Approach</li>
+                    <li>Pediatric Massage Therapy</li>
+                    <li>Myofascial Release (MFR)</li>
+                    <li>Lactation Counseling</li>
 
-        </div>
-    <!-- /.container -->
+                  </ul>
+                  <br>
+                  <a href="#" class="btn btn-success">Meet the Team</a>
+            
+                </div>
+              </div>
+            </div>
+      
+  
+          </div>
+          <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
