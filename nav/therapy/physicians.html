@@ -38,6 +38,40 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+header.masthead {
+  background: url("img/doctor.png") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+  .btn-xl {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+}
   </style>
 
   <body>
@@ -77,12 +111,15 @@ a.navbar-brand{
                 Pediatric Therapy
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../therapy/services.html">Therapy Services</a>
-                <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
-                <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
-                <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
-                <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
-                <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+                  <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
+                  <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
+                  <a class="dropdown-item" href="../therapy/speechpathology.html">Speech Pathology</a>
+                  <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
+                  <a class="dropdown-item" href="../therapy/otherservice.html">Other Therapy Services</a>
+                  <a class="dropdown-item" href="../therapy/clinic.html">High Hopes Clinic</a>
+                  <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
+                  <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
+                  <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
               </div>
             </li>
             <li class="nav-item">
@@ -133,75 +170,89 @@ a.navbar-brand{
     <br>
     <br>
     <!-- Page Content -->
-    <div class="container">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Portfolio Item
-        <small>Subheading</small>
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Portfolio Item</li>
-      </ol>
-
-      <!-- Portfolio Item Row -->
-      <div class="row">
-
-        <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+    <header class="masthead">
+        <div class="overlay">
+          <div class="container">
+            <h1 class="display-1 text-white">For Physicians</h1>
+            <h2 class="display-4 text-white">We're Making the Referal Process Easy</h2>
+            <br>
+            <a class="btn btn-primary btn-xl" href="https://docs.wixstatic.com/ugd/a7eb32_c64c326fcacd4c44883e35aa663737f4.pdf" target="_blank">Referal Form</a>
+          </div>
+          
         </div>
+      </header>
+<hr>
 
-        <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
-        </div>
+      <div class = "container">
+
+          <div class="row">
+              <div class="col-md-12 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                   <h3 class = "strokeme">Our state-of-the-art facility was custom built and completed in 2014 to offer the very best to our patients. The Therapy Clinic at High Hopes serves children and youth from birth to age 21.  As High Hopes is a not-for-profit local to the area for over 32 years, our bottom line is giving the highest quality care to each one of our patients.</h3>
+
+                   <ul class="lead card-text text-shadow text-black w-85 d-none d-lg-block">
+                      <li>High Hopes' therapists work ONE-ON-ONE with each child</li>
+                      <li>Caregivers/family and therapists work as a TEAM</li>
+                      <li>High Hopes' therapists have an average of OVER 14 YEARS of specialized pediatric experience</li>
+                      <li>Therapy is GOAL DIRECTED and based on child/caregiver concerns</li>
+                      <li>High Hopes' therapists COMMUNICATE with other members of the child's healthcare team</li>
+                      <li>Our dedicated scheduler assists with COORDINATION of appointments</li>
+                      <li>Our STATE-OF-THE-ART clinic environment is fun, challenging, and designed to enhance therapy sessions</li>
+                      <li>High Hopes offers all of the BENEFITS of a large clinic with the FEEL of a small practice</li>
+                      <li>Central Williamson County location with CONVENIENT parking and access</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="card h-100">
+                      <div class="card-body">
+                       <h3 class = "strokeme display-4">Our Tools and Techniques</h3>
+    
+                       <ul class="lead card-text text-shadow text-black w-85 d-none d-lg-block">
+                          <li>Therapeutic Listening®</li>
+                          <li>Handwriting Without Tears®</li>
+                          <li>Augmentative and assistive communication (sign language, communication boards, electronic systems, iPads)</li>
+                          <li>Lite Gait® partial weight-bearing gait therapy device</li>
+                          <li>Adaptive Tricycles</li>
+                          <li>Myofacial Release</li>
+                          <li>Weighted/compression garments</li>
+                          <li>Neuromuscular Electrical Stimulation</li>
+                          <li>And much more..</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 mb-4">
+                        <div class="card h-100">
+                          <div class="card-body">
+                           <h3 class = "strokeme display-4">Insurance Carriers</h3>
+        
+                           <ul class="lead card-text text-shadow text-black w-85 d-none d-lg-block">
+                              <li>Aetna</li>
+                              <li>BlueCross BlueShield</li>
+                              <li>Cigna</li>
+                              <li>Humana</li>
+                              <li>TennCare Select</li>
+                              <li>TriCare South</li>
+                              <li>United HealthCare</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
 
       </div>
-      <!-- /.row -->
 
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
 
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
-    </div>
     <!-- /.container -->
 
     <!-- Footer -->
