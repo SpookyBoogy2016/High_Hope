@@ -62,7 +62,6 @@ td{
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="about/resources.html">Resources</a>
                 <a class="dropdown-item" href="about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="about/report.html">Annual Report</a>
@@ -83,15 +82,15 @@ td{
                 Pediatric Therapy
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
-              <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
-              <a class="dropdown-item" href="../therapy/speechpathology.html">Speech Pathology</a>
-              <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
-              <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
-              <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
-              <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
-              <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
-              <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+              <a class="dropdown-item" href="therapy/physicaltherapy.html">Physical Therapy</a>
+              <a class="dropdown-item" href="therapy/occupationaltherapy.html">Occupational Therapy</a>
+              <a class="dropdown-item" href="therapy/speechpathology.html">Speech Pathology</a>
+              <a class="dropdown-item" href="therapy/feedtherapy.html">Feeding Therapy</a>
+              <a class="dropdown-item" href="therapy/forms.html">Clinical Forms</a>
+              <a class="dropdown-item" href="therapy/questions.html">Clinical Billing Questions</a>
+              <a class="dropdown-item" href="therapy/therapy.html">Therapy Payments</a>
+              <a class="dropdown-item" href="therapy/team.html">Meet Therapy Team</a>
+              <a class="dropdown-item" href="therapy/physicians.html">For Physicians</a>
               </div>
             </li>
             <li class="nav-item">
@@ -108,6 +107,9 @@ td{
                 <a class="dropdown-item" href="give/wish.html">Wish List</a>
                 <a class="dropdown-item" href="give/campaign.html">Capital Campaign Share</a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connect/resources.html">Tips and Resources</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
