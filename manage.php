@@ -203,8 +203,23 @@
           <div class="card h-100">
             <div class="card-body">
               <p class="card-text">
-                <h4>Send Text Message to Volunteers</h4>
-                
+                <?php
+                  $db = mysqli_connect('localhost','root','toor','highhopes');
+                  $query = "SELECT `Phone Number` FROM volunteer WHERE 1";
+                  $result = mysqli_query($db, $query);
+                  $list = "";
+                  $first = True;
+                  while($row = mysqli_fetch_row($result)){
+                    if($first){
+                      $list .= "+".$row[0];
+                      $first = !$first;
+                    }
+                    else{
+                      $list .= ",+".$row[0];
+                    }
+                  }
+                  echo '<h4><a href="sms://'.$list.'">Send text message to volunteers</a></h4>';
+                ?>
             </div>
           </div>
         </div>
