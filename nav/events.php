@@ -101,11 +101,9 @@ td{
                 Ways to Give
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="give/apparel.html">High Hopes Apparel</a>
                 <a class="dropdown-item" href="give/donate.html">Donate</a>
                 <a class="dropdown-item" href="give/involve.html">Get Involved</a>
                 <a class="dropdown-item" href="give/wish.html">Wish List</a>
-                <a class="dropdown-item" href="give/campaign.html">Capital Campaign Share</a>
               </div>
             </li>
             <li class="nav-item">
@@ -140,7 +138,7 @@ td{
           <?php
             //set up month Array
             $m = array("-","January","February","March","April","May","June","July","August","September","October","November","December");
-            $db = mysqli_connect('localhost','root','toor','highhopes');
+            $db = mysqli_connect('localhost','root','123blah123','highhopes');
             $query = 'SELECT * FROM `Events` WHERE `EventDate` >= "'.date("Y/m/d").'" ORDER BY `EventDate` ASC';
             $result = mysqli_query($db, $query);
             if(mysqli_num_rows($result) == 0){

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>High Hopes</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +38,40 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+header.masthead {
+  background: url("https://gt20.org/wp-content/uploads/2016/09/volunteer.png") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+  .btn-xl {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+}
   </style>
 
   <body>
@@ -56,7 +90,6 @@ a.navbar-brand{
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../about/resources.html">Resources</a>
                 <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="../about/report.html">Annual Report</a>
@@ -83,7 +116,7 @@ a.navbar-brand{
                   <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
                   <a class="dropdown-item" href="../therapy/otherservice.html">Other Therapy Services</a>
                   <a class="dropdown-item" href="../therapy/clinic.html">High Hopes Clinic</a>
-                  <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
+                  <a class="dropdown-item" href="../therapy/therapy.html">Therapy Payments</a>
                   <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
                   <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
               </div>
@@ -96,26 +129,13 @@ a.navbar-brand{
                 Ways to Give
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../give/apparel.html">High Hopes Apparel</a>
                 <a class="dropdown-item" href="../give/donate.html">Donate</a>
                 <a class="dropdown-item" href="../give/involve.html">Get Involved</a>
                 <a class="dropdown-item" href="../give/wish.html">Wish List</a>
-                <a class="dropdown-item" href="../give/campaign.html">Capital Campaign Share</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Connecting the Dots
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
-                <a class="dropdown-item" href="../connect/family.html">Family Support</a>
-                <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
-                <a class="dropdown-item" href="../connect/recreational.html">Recreational & Therapeutic</a>
-                <a class="dropdown-item" href="../connect/transitional.html">Transitional Planning</a>
-                <a class="dropdown-item" href="../connect/tips.html">Tips by & For Parents</a>
-                <a class="dropdown-item" href="../connect/spotlight.html">Local Spotlight</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="../connect/resources.html">Tips and Resources</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -136,81 +156,85 @@ a.navbar-brand{
     <br>
     <br>
     <!-- Page Content -->
-    <div class="container">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Portfolio Item
-        <small>Subheading</small>
-      </h1>
+    <header class="masthead">
+        <div class="overlay">
+          <div class="container">
+            <h2 class="display-4 text-white">"The work that High Hopes does to empower kids for the future is truly extraordinary, and I ALWAYS leave with a smile on my face and in my heart!”</h2>
+            <br>
+            <h2 class="lead card-text text-shadow text-white w-85 d-none d-lg-block">-Brady W., High Hopes Volunteer</h2>
+            <br>
+            <a class="btn btn-primary btn-xl" href="../contact/volunteer.html" target="_blank">Learn More</a>
+          </div>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Portfolio Item</li>
-      </ol>
-
-      <!-- Portfolio Item Row -->
-      <div class="row">
-
-        <div class="col-md-8">
-          <img class="img-fluid" src="http://placehold.it/750x500" alt="">
         </div>
+      </header>
+<hr>
 
-        <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
-        </div>
+      <div class = "container">
+
+          <div class="row">
+              <div class="col-md-12 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                      <h3 class = "strokeme display-4">High Hopes utilizes volunteers in the following areas:</h3>
+                   <ul class="lead card-text text-shadow text-black w-85 d-none d-lg-block">
+                      <li>Therapy Clinic</li>
+                      <li>Preschool</li>
+                      <li>Administration</li>
+                      <li>Family Support Events</li>
+                      <li>Fundraising Events</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 mb-4">
+                    <div class="card h-100">
+                      <div class="card-body">
+                       <h3 class = "strokeme display-4">Upcoming Volunteer Opprotunities</h3>
+                      
+                       <ul class="lead card-text text-shadow text-black w-85 d-none d-lg-block">
+                          <b><li>Parent's Night Out, December 9th 4-8PM:</li></b>
+                          <h2 class="lead card-text text-shadow text-black w-85 d-none d-lg-block">Join us for a night of holiday fun with our clinic and preschool kiddos! The children will rotate to holiday themed stations, and the night will end with snacks and a movie. Volunteers will man the stations, including games, crafts, cookie decorating, etc. </h2>
+                          <b><li>Hats Off to High Hopes at the Ryman, January 29th</li></b>
+                          <h2 class="lead card-text text-shadow text-black w-85 d-none d-lg-block">Jonathan Cain, of the band Journey, and Friends will host the 20th Anniversary of Hats Off to High Hopes! You won't want to miss this exciting event celebrating High Hopes! Potential volunteer duties include registration, greeter, usher, and merchandise table. Volunteers will rotate duties so everyone has an opportunity to see part of the show.</h2>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 mb-4">
+                        <div class="card h-100">
+                          <div class="card-body">
+                           <h3 class = "strokeme display-4">Interested in Volunteering?</h3>
+                           <h2 class="lead card-text text-shadow text-black w-85 d-none d-lg-block">Contact Jessica Mizell at jmizell@highhopesforkids.org or 615-550-1447 for more information</h2>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
 
       </div>
-      <!-- /.row -->
 
-      <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
 
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
-    </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <div style="float: right;">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="2957CZ8XLDFN6">
+            <input type="image" width="100%" height="100%" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <p class="m-0 text-center text-white">Copyright &copy; The Gooey Narwhals</p>
       </div>
       <!-- /.container -->
     </footer>
