@@ -101,11 +101,9 @@ td{
                 Ways to Give
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="give/apparel.html">High Hopes Apparel</a>
                 <a class="dropdown-item" href="give/donate.html">Donate</a>
                 <a class="dropdown-item" href="give/involve.html">Get Involved</a>
                 <a class="dropdown-item" href="give/wish.html">Wish List</a>
-                <a class="dropdown-item" href="give/campaign.html">Capital Campaign Share</a>
               </div>
             </li>
             <li class="nav-item">
