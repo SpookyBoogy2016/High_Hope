@@ -38,6 +38,14 @@ a.navbar-brand{
 .nav-link{
   font-size: 1.3em;
 }
+@font-face{
+  font-family: myFirstFont;
+  src: url('../../Bella.ttf')
+}
+h1.customfont {
+    font-family: myFirstFont;
+    color: #D2B4DE;
+}
   </style>
 
   <body>
@@ -56,7 +64,6 @@ a.navbar-brand{
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../about/resources.html">Resources</a>
                 <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="../about/report.html">Annual Report</a>
@@ -96,26 +103,13 @@ a.navbar-brand{
                 Ways to Give
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="../give/apparel.html">High Hopes Apparel</a>
                 <a class="dropdown-item" href="../give/donate.html">Donate</a>
                 <a class="dropdown-item" href="../give/involve.html">Get Involved</a>
                 <a class="dropdown-item" href="../give/wish.html">Wish List</a>
-                <a class="dropdown-item" href="../give/campaign.html">Capital Campaign Share</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Connecting the Dots
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
-                <a class="dropdown-item" href="../connect/family.html">Family Support</a>
-                <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
-                <a class="dropdown-item" href="../connect/recreational.html">Recreational & Therapeutic</a>
-                <a class="dropdown-item" href="../connect/transitional.html">Transitional Planning</a>
-                <a class="dropdown-item" href="../connect/tips.html">Tips by & For Parents</a>
-                <a class="dropdown-item" href="../connect/spotlight.html">Local Spotlight</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="../connect/resources.html">Tips and Resources</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -138,115 +132,35 @@ a.navbar-brand{
     <!-- Page Content -->
     <div class="container">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Portfolio 3
-        <small>Subheading</small>
-      </h1>
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="capture/give.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h1 class="card-title text-shadow text-white text-uppercase mb-0" style="text-align: center;">High Hopes welcomes donations for our classrooms, clinic, and administrative staff!</h1>
+            <h2 class="card-title text-shadow text-white" style = "text-align: center;">Some suggested items include: </h2>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Portfolio 3</li>
-      </ol>
-
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project One</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Two</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Three</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Four</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Five</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Six</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-            </div>
+            <ul>
+              <li style = "font-size : 22px" class = "text-white">Health O Meter Professional Pediatric Scale 553KL or monetary donation toward purchase.</li>
+              <li style = "font-size : 22px" class = "text-white">Target gift cards for small rocking chair glider for the baby room</li>
+              <li style = "font-size : 22px" class = "text-white">New or Used (in working condition) iPads for therapeutic purposes</li>
+              <li style = "font-size : 22px" class = "text-white">Letter-size 1.3 cut file folders</li>
+              <li style = "font-size : 22px" class = "text-white">Letter-size hanging files</li>
+              <li style = "font-size : 22px" class = "text-white">Washable markers</li>
+              <li style = "font-size : 22px" class = "text-white">Clorox cleaning wipes</li>
+              <li style = "font-size : 22px" class = "text-white">White 20lb. 92 bright copier paper</li>
+              <li style = "font-size : 22px" class = "text-white">Colored copier paper</li>
+              <li style = "font-size : 22px" class = "text-white">Glue Sticks</li>
+              <li style = "font-size : 22px" class = "text-white">Gel ink pens: blue, black, red</li>
+              <li style = "font-size : 22px" class = "text-white">Construction paper</li>
+              <li style = "font-size : 22px" class = "text-white">Puzzles appropriate for ages 12 months to 5 years</li>
+              <li style = "font-size : 22px" class = "text-white">Batteries - all sizes</li>
+            </ul>
+            <h1 class = customfont style = "text-align: center">Thank You</h1>
           </div>
         </div>
       </div>
 
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-
     </div>
-    <!-- /.container -->
-
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">

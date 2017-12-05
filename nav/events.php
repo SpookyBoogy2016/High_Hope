@@ -62,7 +62,6 @@ td{
                 About Us
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="about/resources.html">Resources</a>
                 <a class="dropdown-item" href="about/stories.html">Personal Stories</a>
                 <a class="dropdown-item" href="about/board.html">Board of Directors</a>
                 <a class="dropdown-item" href="about/report.html">Annual Report</a>
@@ -83,15 +82,15 @@ td{
                 Pediatric Therapy
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="../therapy/physicaltherapy.html">Physical Therapy</a>
-              <a class="dropdown-item" href="../therapy/occupationaltherapy.html">Occupational Therapy</a>
-              <a class="dropdown-item" href="../therapy/speechpathology.html">Speech Pathology</a>
-              <a class="dropdown-item" href="../therapy/feedtherapy.html">Feeding Therapy</a>
-              <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
-              <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
-              <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
-              <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
-              <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+              <a class="dropdown-item" href="therapy/physicaltherapy.html">Physical Therapy</a>
+              <a class="dropdown-item" href="therapy/occupationaltherapy.html">Occupational Therapy</a>
+              <a class="dropdown-item" href="therapy/speechpathology.html">Speech Pathology</a>
+              <a class="dropdown-item" href="therapy/feedtherapy.html">Feeding Therapy</a>
+              <a class="dropdown-item" href="therapy/forms.html">Clinical Forms</a>
+              <a class="dropdown-item" href="therapy/questions.html">Clinical Billing Questions</a>
+              <a class="dropdown-item" href="therapy/therapy.html">Therapy Payments</a>
+              <a class="dropdown-item" href="therapy/team.html">Meet Therapy Team</a>
+              <a class="dropdown-item" href="therapy/physicians.html">For Physicians</a>
               </div>
             </li>
             <li class="nav-item">
@@ -102,26 +101,13 @@ td{
                 Ways to Give
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="give/apparel.html">High Hopes Apparel</a>
                 <a class="dropdown-item" href="give/donate.html">Donate</a>
                 <a class="dropdown-item" href="give/involve.html">Get Involved</a>
                 <a class="dropdown-item" href="give/wish.html">Wish List</a>
-                <a class="dropdown-item" href="give/campaign.html">Capital Campaign Share</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Connecting the Dots
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="connect/planning.html">Educational Planning & Support</a>
-                <a class="dropdown-item" href="connect/family.html">Family Support</a>
-                <a class="dropdown-item" href="connect/financial.html">Financial Planning</a>
-                <a class="dropdown-item" href="connect/recreational.html">Recreational & Therapeutic</a>
-                <a class="dropdown-item" href="connect/transitional.html">Transitional Planning</a>
-                <a class="dropdown-item" href="connect/tips.html">Tips by & For Parents</a>
-                <a class="dropdown-item" href="connect/spotlight.html">Local Spotlight</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="connect/resources.html">Tips and Resources</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -153,7 +139,7 @@ td{
             //set up month Array
             $m = array("-","January","February","March","April","May","June","July","August","September","October","November","December");
             $db = mysqli_connect('localhost','root','toor','highhopes');
-            $query = 'SELECT * FROM `Events` WHERE `EventDate` >= "'.date("Y/m/d").'"';
+            $query = 'SELECT * FROM `Events` WHERE `EventDate` >= "'.date("Y/m/d").'" ORDER BY `EventDate` ASC';
             $result = mysqli_query($db, $query);
             if(mysqli_num_rows($result) == 0){
               echo "<p>There doesn't seem to be any events here. If this is wrong, please contact the website administrator.</p>";
@@ -188,7 +174,15 @@ td{
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <div style="float: right;">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="2957CZ8XLDFN6">
+            <input type="image" width="100%" height="100%" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <p class="m-0 text-center text-white">Copyright &copy; The Gooey Narwhals</p>
       </div>
       <!-- /.container -->
     </footer>
