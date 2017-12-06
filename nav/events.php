@@ -138,7 +138,7 @@ td{
           <?php
             //set up month Array
             $m = array("-","January","February","March","April","May","June","July","August","September","October","November","December");
-            $db = mysqli_connect('localhost','root','123blah123','highhopes');
+            $db = mysqli_connect('localhost','root','toor','highhopes');
             $query = 'SELECT * FROM `Events` WHERE `EventDate` >= "'.date("Y/m/d").'" ORDER BY `EventDate` ASC';
             $result = mysqli_query($db, $query);
             if(mysqli_num_rows($result) == 0){

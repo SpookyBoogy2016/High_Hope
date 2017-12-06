@@ -191,7 +191,7 @@
 
                   <div class="form-group">
                     <label for="Description">Employee Description</label>
-                    <textarea class="form-control" id="Description" rows="3"></textarea>
+                    <textarea class="form-control" id="Description" name="Description" rows="3"></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-primary">Add Employee</button>
