@@ -1,4 +1,5 @@
 # High_Hopes
+High Hopes is an organization that provides different kinds of therapy for children.  At the time of creation, their website was disorganized and cluttered.  This project was started as a free new website design that they could use as a replacement.
 <h2> Setup </h2>
 <p>
 Install ANT (if not installed).
